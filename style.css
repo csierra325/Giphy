@@ -1,0 +1,25 @@
+body{
+    background:black;
+    background-image: url(css/giphy.jpg); 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+} 
+
+.giphy_images{
+    margin: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+button{
+    font-weight: bold;
+    background: red;
+    
+}
+
+displayGiphy{
+    align-content: center;
+}
