@@ -12,14 +12,24 @@ body{
     color: white;
     font-weight: bold;
     font-size: 2em;
+    
 }
 
 button{
     font-weight: bold;
     background: red;
-    
+    margin-top: 5%,
 }
 
-displayGiphy{
-    align-content: center;
+
+.giphy_search{
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+input{
+    margin-top: 2%;
+    margin-left: 4%;
+    padding: 1.5%;
 }

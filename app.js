@@ -26,7 +26,7 @@ function renderButtons() {
       //
       // This code $("<button>") is what jQuery needs to create a button. 
       var a = $("<button>");
-      // Adding a class of movie-btn to our button
+      // Adding a class of band-btn to our button
       a.addClass("band-btn");
       // Adding a data-attribute
       a.attr("data-name", band[i]);
@@ -53,7 +53,7 @@ function addButton(text) {
 
 function createImage(rating, url, still, animated) {
     var image = $('<img>');
-    var pOne = $("<p>").text("rating: " + rating);
+   
     image.attr({
         src: url,
         'data-animated': animated,
@@ -92,7 +92,7 @@ function displayGiphy(response) {
 function grabGiphy(val) {
 
     $.ajax({
-            url: 'https://api.giphy.com/v1/gifs/search?api_key=e1wKfEvTs4fxDAl40AguhTo5EbCcadbY&q=' + val,
+            url: 'https://api.giphy.com/v1/gifs/search?limit=10&api_key=e1wKfEvTs4fxDAl40AguhTo5EbCcadbY&q=' + val,
             method: 'GET'
 
         })
@@ -113,7 +113,7 @@ function searchGiphy(event) {
 
     event.preventDefault();
 
-    var value = $('#search').val();
+    var value = $('#search').val().trim();
 
     $('.giphy_multiplebuttons').append(addButton(value));
     grabGiphy(value);
